@@ -2,11 +2,11 @@ package Introduction;
 
 public class RandomCardPull {
 	public static void main(String[] args) {
-		int ACE = 1;
-		int JACK = 11;
-		int QUEEN = 12;
-		int KING = 13;
 		String[] suits = {"Spades", "Hearts", "Clubs", "Spades"};
+		
+		int cardInfo = pickRandomCard();
+		
+		System.out.println(cardInfo[0] + " of " + suits[cardInfo[1]]);
 	}
 	
 	public static int pickRandomCard(){
